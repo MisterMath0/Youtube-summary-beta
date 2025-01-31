@@ -1,0 +1,42 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Next.js build output and cache
+.next/
+out/
+
+# Vercel deployment
+.vercel/
+
+# Logs
+logs/
+*.log
+
+# Editor/OS specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# TypeScript build files
+tsconfig.tsbuildinfo
+
+# Testing coverage
+coverage/
+
+# Miscellaneous
+package-lock.json
+yarn.lock.pnp.cjs
+.pnp.cjs
+.pnp.loader.mjs
