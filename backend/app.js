@@ -190,7 +190,7 @@ app.post('/api/process-project', async (req, res) => {
                     role: "system",
                     content: `Analyze these YouTube video transcripts and provide a valid JSON object with the following keys:
                         - commonThemes: array of common themes and topics across videos
-                        - differentPerspectives: array of different viewpoints on similar topics
+                        - summary of the video and the topic discussed
                         - contentGaps: array of potential content opportunities
                         - suggestedOutline: array of sections for a new video
                         All values should be arrays of strings. Return only JSON without markdown formatting.`
@@ -244,8 +244,6 @@ app.post('/api/save-project', async (req, res) => {
     try {
         const { projectName, videos, synthesis } = req.body;
         
-        // Here you would typically save to a database
-        // For now, we'll just return success
         res.json({
             message: 'Project saved successfully',
             data: { projectName, videos, synthesis }
